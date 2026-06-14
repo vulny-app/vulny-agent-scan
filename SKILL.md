@@ -16,7 +16,14 @@ Add the Vulny MCP server to your client:
 
 A plain REST API mirrors every tool at `https://agent-api.vulny.app` (same auth) if you prefer raw HTTP.
 
-## First-time setup (get an API key)
+## Two ways to pay for scans
+
+- **Subscription token (`vlns_…`)** — if you already have a Vulny dashboard account with an **active subscription**, generate an agent token in the dashboard (Settings → API → *AI agent (MCP)*). Scans run on your **subscription** (no credits), within your plan's limits (target count + daily quota), and you can only scan targets already added on your Targets page. `register`/`buy_credits`/`get_balance` billing, `export_data`/`delete_data` and key revocation are managed in the dashboard, not via the agent — those tools return a notice for this token type.
+- **Credit account (`vlna_…`)** — no dashboard account needed. Get a key via `register` (below) and prepay credits (1 credit = 1 scan).
+
+`get_balance` reports which mode your token is in.
+
+## First-time setup (credit account — get an API key)
 
 1. Call **`register`** with the user's **company email** (public providers like gmail/outlook are rejected; the email domain must match the domain you will scan).
 2. Vulny emails a one-time setup link to that address. The user opens it and copies the API key shown.
