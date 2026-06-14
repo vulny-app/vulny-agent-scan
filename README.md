@@ -1,6 +1,11 @@
 # Vulny Agent Scan — MCP skill
 
-Give your AI agent the ability to run **real vulnerability scans** (nmap + nuclei + CVE matching) on the domains and IPs you own — directly from the conversation. Vulny exposes its scanner as a **Model Context Protocol (MCP)** server, so agents in Claude, Cursor and other MCP-compatible clients can scan, track progress and return a prioritised report. Pay-per-scan with prepaid credits (Stripe).
+Give your AI agent the ability to run **real vulnerability scans** (nmap + nuclei + CVE matching) on the domains and IPs you own — directly from the conversation. Vulny exposes its scanner as a **Model Context Protocol (MCP)** server, so agents in Claude, Cursor and other MCP-compatible clients can scan, track progress and return a prioritised report.
+
+Two ways to use it:
+
+- **Already subscribed on [vulny.app](https://vulny.app)?** Generate an agent token in the dashboard (Settings → API → *AI agent (MCP)*) and run **unlimited scans** on your subscription — no credits, no extra charge. The agent scans the targets you've added in your dashboard.
+- **No account?** Pay-per-scan with prepaid credits (Stripe) — just `register` with your company email and go.
 
 - Website & docs: https://vulny.app/p/agent-scan
 - Operated by **Vulny SIA** (Latvia, reg. No. 40203753831)
